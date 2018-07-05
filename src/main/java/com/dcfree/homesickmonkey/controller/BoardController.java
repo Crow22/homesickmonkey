@@ -4,9 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class DefaultController {
-    @RequestMapping("/header")
+public class BoardController {
+    @RequestMapping("/board")
     public String header() {
-        return "header";
+        return "board";
     }
 }
