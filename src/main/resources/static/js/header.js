@@ -9,6 +9,9 @@ homesick.header = function () {
     var goBoard = function () {
         window.location.href="/board";
     };
+    var setActive = function (liName) {
+        $("#" + liName).addClass("active");
+    }
     return {
         goMonster: function() {
             goMonster();
@@ -18,6 +21,9 @@ homesick.header = function () {
         },
         goBoard : function() {
             goBoard();
+        },
+        setActive : function (liName) {
+            setActive(liName);
         }
     };
 }();

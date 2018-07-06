@@ -2,8 +2,7 @@ $.namespace("homesick.labs");
 
 homesick.labs = function () {
     var init = function () {
-        $("#monster_li").removeClass("active");
-        $("#labs_li").addClass("active");
+        homesick.header.setActive("labs_li");
     };
     
     return {
@@ -12,3 +11,6 @@ homesick.labs = function () {
         }
     }
 };
+$(document).ready(function(){
+    $(homesick.labs().init());
+});

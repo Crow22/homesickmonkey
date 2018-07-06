@@ -2,7 +2,7 @@ $.namespace("homesick.board");
 
 homesick.board = function () {
     var init = function () {
-        $("#board_li").addClass("active");
+        homesick.header.setActive("board_li");
     };
     
     return {
@@ -11,3 +11,8 @@ homesick.board = function () {
         }
     }
 };
+
+
+$(document).ready(function(){
+    $(homesick.board().init());
+});

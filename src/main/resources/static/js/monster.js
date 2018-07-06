@@ -2,8 +2,7 @@ $.namespace("homesick.monster");
 
 homesick.monster = function () {
     var init = function () {
-        $("#monster_li").addClass("active");
-        alert(document.getElementById("testid"))
+        homesick.header.setActive("monster_li");
     };
     
     return {
@@ -12,4 +11,6 @@ homesick.monster = function () {
         }
     }
 };
-$(homesick.monster().init());
+$(document).ready(function(){
+    $(homesick.monster().init());
+});
