@@ -11,7 +11,14 @@ homesick.header = function () {
     };
     var setActive = function (liName) {
         $("#" + liName).addClass("active");
-    }
+    };
+    var showLogin = function() {
+        $('#login_modal').modal();
+    };
+    var login = function() {
+        alert($("#user_name").val());
+        alert($("#user_pass").val());
+    };
     return {
         goMonster: function() {
             goMonster();
@@ -24,6 +31,12 @@ homesick.header = function () {
         },
         setActive : function (liName) {
             setActive(liName);
+        },
+        showLogin : function () {
+            showLogin();
+        },
+        login : function () {
+            login();
         }
     };
 }();

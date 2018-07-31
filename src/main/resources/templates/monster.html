@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>思乡病猴子......而我的心中，有火焰，和秋天。</title>
+    <link href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link th:href="@{/css/monster.css}" rel="stylesheet">
     <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
     <script th:src="@{/js/lib.js}"></script>
     <script th:src="@{/js/header.js}"></script>
@@ -12,7 +14,10 @@
         <div th:replace="header::html"></div>
 
         <div class="container">
-
+            <div class="blog-header">
+                <h1 class="blog-title">The Bootstrap Blog</h1>
+                <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+            </div>
 
         </div>
 </body>
